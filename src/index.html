@@ -52,18 +52,18 @@
                             </div>
                             <div class="col-6">
                                 <a class="responsive-search-button-2 btn" href="">
-                                    <img src="assets/icons/search.svg" alt="search" style="width: 1em;"  >
+                                    <img src="assets/icons/search.svg" alt="search" style="width: 1em;">
 
                                 </a>
                             </div>
                         </div>
                     </div>
                     <nav id="main-nav" class="d-none d-lg-flex">
-                    <!-- Bloque de Menú y Contacto -->
+                        <!-- Bloque de Menú y Contacto -->
 
                         <div>
                             <div class="detail">
-                               <h5>966 274 206</h5>
+                                <h5>966 274 206</h5>
                             </div>
                             <ul class="list-inline">
                                 <li class="list-inline-item active"><a href="">Inicio</a></li>
@@ -76,39 +76,33 @@
                                         <li class="dropdown-item">
                                             <a href="">Ver todas las propiedades</a>
                                         </li>
-                                        <li class="dropdown-item"><a
-                                                href="">Alquiler a largo plazo</a>
+                                        <li class="dropdown-item"><a href="">Alquiler a largo plazo</a>
                                         </li>
                                         <li class="dropdown-item"><a href="">Nueva
                                                 construcción </a></li>
                                         <li class="dropdown-item"><a href="">Venta</a></li>
                                     </ul>
                                 </li>
-                                <li class="list-inline-item  hide-header hide-footer "><a href="">Propiedades</a></li>
-                                <li class="list-inline-item  hide-header "><a href="">Servicios</a></li>
                                 <li class="list-inline-item "><a href="">Vender</a></li>
-                                <li class="list-inline-item hide-header "><a href="">Blog</a></li>
-                                <li class="list-inline-item hide-header "><a href="">Contactar</a></li>
-                                <li class=" no-hover list-inline-item hide-header "><a href=""><span
-                                            class="favor"></span> <img src="assets/icons/Icon feather-heart-outline.svg"
-                                            Favoritos">
-                                        <span id="budget-fav"></span></a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <div class="col-lg-4 pl-xl-0 order-lg-last d-none d-lg-block text-lg-end text-nowrap">
-                    
+
+                    <div class="d-inline-block detail pe-3">
+                       <h5>info@inmovalley.com</h5>
+                    </div>
                     <div class="d-inline-block pe-3">
                         <div class="dropdown idiomas-dropdown">
                             <a href="/" class="dropdown-toggle" id="dropdownMenu" data-bs-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <img src="assets/icons/eng_flag.svg" alt="English">
                                 <img src="assets/icons/dropdown.svg" alt="dropdown" style="width: 1em;">
-                             </a>
+                            </a>
                         </div>
                     </div>
-                                    <!-- Bloque de Navegación e Iconos Sociales -->
+                    <!-- Bloque de Navegación e Iconos Sociales -->
 
                     <div class="d-inline-block">
                         <a href="https://www.facebook.com/pages/category/Real-Estate/Inmovalley-861958737195573/"
@@ -137,6 +131,189 @@
             </div>
         </div>
     </header>
+
+
+    <div class="wrapper-slider-search  padding-home  position-relative">
+
+        <div class="main-slider">
+            <div class="caption text-lg-start text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-7">
+                            <div class="ba-animated fadeInLeft delay">
+                                INMO <span>VALLEY</span>
+                            </div>
+                            <a id="toSearch" class="arrow d-none d-lg-block ">
+                                <img src="assets/icons/Icon feather-arrow-down-circle.svg"
+                                   >
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-5 align-self-md-end">
+                            <div class="ba-animated fadeInBottom delay">
+                                <small>Siempre a tu lado</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buscador  b-home ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form action="/propiedades/" method="get" id="searchHomeForm" role="form" class="validate">
+
+
+                            <div id="searchHome" class="row g-lg-0">
+                                <div class="col-lg-10 col-12">
+
+                                    <div class="row g-lg-0 row-cols-lg-6">
+
+                                        <div class="mb-3 d-lg-none text-right">
+                                        </div>
+
+                                        <div class="col">
+                                            <select name="st[]" id="st" class="form-control select2" multiple
+                                                data-placeholder="Estado">
+                                                <option value="">Estado</option>
+                                                <option value="Alquiler">Alquiler a largo plazo</option>
+                                                <option value="construcción">Nueva construcción </option>
+                                                <option value="Venta">Venta</option>
+                                            </select>
+                                        </div>
+                                        <div class="col col-responsive-6">
+                                            <select name="tp[]" id="tp" class="form-control select2" multiple
+                                                data-placeholder="Tipo">
+                                                <option value="Adosado">Adosado</option>
+                                                <option value="Ático">Ático</option>
+                                                <option value="Casa">Casa</option>
+                                            </select>
+                                        </div>
+                                        <div class="col col-responsive-6">
+                                            <select name="loct[]" id="loct" class="form-control select2" multiple
+                                                data-placeholder="Población">
+                                                <option value="">Población</option>
+                                                <option value="Albatera">Albatera</option>
+                                                <option value="Alicante">Alicante</option>
+                                                <option value="Almoradi">Almoradi</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col col-responsive-6 hide-responsive">
+                                            <select name="lozn[]" id="lozn" class="form-control select2" multiple
+                                                data-placeholder="Zona">
+                                                <option value="">Zona</option>
+                                                <option value="31">ALMORADI</option>
+                                                <option value="10">Altabix</option>
+       
+                                            </select>
+                                        </div>
+
+                                        <div class="col col-responsive-6">
+                                            <select name="prhs" id="prhs" class="form-control">
+                                                <option value="" selected>Precio hasta</option>
+                                                <option value="200">200 €</option>
+                                                <option value="400">400 €</option>
+                              
+                                            </select>
+                                        </div>
+                                        <div class="col col-responsive-6 hide-responsive no-pad-mov">
+                                            <input type="text" name="rf" id="rf" class="form-control" value=""
+                                                placeholder="Referencia" />
+                                        </div>
+                                        <div class="col hide-home col-responsive-6">
+                                            <select name="prds" id="prds" class="form-control">
+                                                <option value="" selected>Precio desde</option>
+                                                <option value="200">200 €</option>
+                                                <option value="400">400 €</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col hide-home hide-responsive ajustar">
+                                            <select name="bt" id="bt" class="form-control">
+                                                <option value="" selected>Baños</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col hide-home hide-responsive ajustar">
+                                            <label class="checkcontainer"> Piscina
+                                                <input type="checkbox" name="pool" value="1" />
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col-6 text-center d-grid d-lg-none">
+
+                                    <a href="javascript:void(0);" class="btn  btn-dark button-search-reset">
+                                        <img class="pe-2" src="/media/images/website/icon-reset.svg"
+                                            alt="Limpiar Filtros"> Limpiar Filtros
+                                    </a>
+
+                                </div>
+
+                                <div class="col-6 col-lg-2 d-grid">
+                                    <button type="submit"
+                                        class="btn btn-secondary btn-search d-block text-white px-lg-4">
+                                        <img src="/media/images/website/icon-search-form.svg" class="pe-2" alt="Buscar">
+                                        Buscar</button>
+                                </div>
+
+                            </div>
+
+                            <div class="row pt-2">
+                                <div class="col-lg-6">
+                                    <div class="row g-0">
+
+                                        <div class="col-6 text-center d-none d-lg-grid">
+
+                                            <a href="javascript:void(0);" class="btn  btn-dark button-search-reset">
+                                                <img class="pe-2" src="/media/images/website/icon-reset.svg"
+                                                    alt="Limpiar Filtros"> Limpiar Filtros
+                                            </a>
+
+                                        </div>
+
+                                        <input type="hidden" name="date" id="date" value="1693924164" />
+                                        <input type="hidden" name="langx" id="langx" value="es">
+
+
+                                        <div class="col-6 d-none d-lg-grid">
+
+                                            <a href="javascript:void(0);"
+                                                class="btn btn-primary d-block more-options-btn"> <img class="pe-2"
+                                                    src="/media/images/website/icon-advanced-search-2.svg"
+                                                    alt="Limpiar Filtros"> Búsqueda Avanzada</a>
+
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/main.js"></script>
